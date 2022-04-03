@@ -1,3 +1,48 @@
+html, body{
+  background-image: url(/assets/images/background.png);
+  background-size: auto;
+  min-height: 100%;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+
+}
+
+
+.container_imagem_fundo {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top:0;
+  left: 0;
+  
+}
+
+.imagem_fundo {
+  
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  background-image: url('../assets/images/background.png');
+  position: absolute;
+  /* z-index: -1; */
+  top:0;
+  left: 0;
+}
+
+.opcoes{
+  position: absolute;
+  background-color: #c9e265;
+  left: 50%;
+  right: 50%;
+
+}
+
+
+
+
+
+
+
 .botao {
   position: relative;
   background-color: #c9e265;
