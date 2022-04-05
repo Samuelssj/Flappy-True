@@ -1,59 +1,115 @@
 html, body{
-  background-image: url(/assets/images/background.png);
-  background-size: auto;
-  min-height: 100%;
-  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-
-}
-
-
-.container_imagem_fundo {
-  height: 100%;
-  width: 100%;
-
-  position: absolute;
-  top:0;
-  left: 0;
-  
-}
-
-.imagem_fundo {
   
   height: 100vh;
-  width: 100vw;
-  background-size: 100% 100%;
+  width: 99vw;
   background-image: url('../assets/images/background.png');
-  position: absolute;
+  position: fixed;
+  background-size: 100% 100%;
+  display: contents;
 
 }
-
 .container{
-  background-color: red;
-  height: 50vh;
-  width: 50%;
-  margin-bottom: 10px;
+
+  background-color: #8c52ff;
+}
+
+.logo {
+
+padding-left: 15%;
+
+
+
+
+}
+
+img {
+  max-width: 80%;
+  max-height: 100%;
 }
 
 
+.menu_opcoes{
+
+ max-width: 80%;
+ margin-left: 15%;
 
 
 
-
+}
 
 .botao {
   position: relative;
   background-color: #c9e265;
   border: none;
-  font-size: 28px;
-  height: 70px;
-  margin-left: 30%;
-  margin-right: 50%;
+  font-size: 80px;
+  height: 125px;
   color: black;
   font-weight: bold;
-  
-  width: 200px;
+  width: 90.5%;
+
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.botaoAjuda {
+  position: relative;
+  background-color: #f4729c;
+  border: none;
+  height: 100px;
+  font-size: 60px;
+ 
+  
+
+  color: black;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.botaoOpcoes {
+  position: relative;
+  background-color: #cfc1ff;
+  border: none;
+  height: 100px;
+  font-size: 60px;
+ 
+  
+
+  color: black;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.botaoPlacar {
+  position: relative;
+  background-color: #8c52ff;
+  border: none;
+  height: 100px;
+  font-size: 60px;
+ 
+  
+
+  color: black;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
@@ -64,14 +120,16 @@ html, body{
   position: relative;
   background-color: #ff914d;
   border: none;
-  height: 50px;
-  font-size: 28px;
-  margin-top: 5%;
+  height: 100px;
+  font-size: 60px;
+ 
+  
+
   color: black;
   font-weight: bold;
-  width: 150px;
+  width: 400px;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
@@ -79,6 +137,9 @@ html, body{
 }
 
 .botao:after,
+.botaoAjuda:after,
+.botaoOpcoes:after,
+.botaoPlacar:after,
 .botaovoltar:after {
   content: "";
   background: #0a0a0a;
@@ -93,6 +154,9 @@ html, body{
 }
 
 .botao:active:after,
+.botaoAjuda:active:after,
+.botaoOpcoes:active:after,
+.botaoPlacar:active:after,
 .botaovoltar:active:after {
   padding: 0;
   margin: 0;
